@@ -24,7 +24,7 @@ def filters():
 
 @app.teardown_appcontext
 def do_teardown(self):
-    """Closes session"""
+    """Closes the session"""
     storage.close()
 
 
